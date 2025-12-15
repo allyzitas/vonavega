@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VôNavega - Inclusão Digital para Idosos</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo"><img src="images/image.png" alt="Logo VôNavega"></div>
+                <span>VôNavega</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="#missao">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Aprenda a Navegar pelo Mundo Digital com Confiança</h1>
+            <p>A VôNavega oferece orientação simples e acolhedora para você dominar a internet e viver plenamente na era digital.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">Comece Agora</button>
+                <button class="btn btn-secondary" onclick="document.getElementById('missao').scrollIntoView({behavior: 'smooth'})">Saiba Mais</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- MISSÃO, VISÃO E VALORES -->
+    <section id="missao">
+        <h2 class="section-title">Sobre a VôNavega</h2>
+        <div class="mvv-container">
+            <div class="mvv-card fade-in">
+                <h3>🎯 Missão</h3>
+                <p>Promover inclusão digital e autonomia para pessoas idosas, oferecendo orientação paciente, didática e acessível para que todos consigam aproveitar plenamente os benefícios da internet e dos dispositivos digitais.</p>
+            </div>
+            <div class="mvv-card fade-in" style="animation-delay: 0.1s;">
+                <h3>🌟 Visão</h3>
+                <p>Ser a principal referência em inclusão digital para idosos, criando uma comunidade onde a tecnologia é acessível, descomplicada e empoderador para todas as gerações.</p>
+            </div>
+            <div class="mvv-card fade-in" style="animation-delay: 0.2s;">
+                <h3>💎 Valores</h3>
+                <p>Paciência, empatia, acessibilidade, inclusão social, respeito à diversidade e compromisso com a qualidade de vida digital.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" style="background-color: var(--neutral-light);">
+        <h2 class="section-title">Serviços que Oferecemos</h2>
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <div class="service-icon">📱</div>
+                <h3>Celulares & Tablets</h3>
+                <p>Aprenda a usar seu dispositivo móvel, instalar aplicativos, tirar fotos e se comunicar com segurança.</p>
+            </div>
+            <div class="service-card fade-in" style="animation-delay: 0.1s;">
+                <div class="service-icon">💻</div>
+                <h3>Computadores</h3>
+                <p>Domine o uso básico de computadores, navegadores e aplicativos essenciais para o dia a dia.</p>
+            </div>
+            <div class="service-card fade-in" style="animation-delay: 0.2s;">
+                <div class="service-icon">🏦</div>
+                <h3>Serviços Bancários</h3>
+                <p>Acesse sua conta bancária online com segurança, realize transferências e pague contas digitalmente.</p>
+            </div>
+            <div class="service-card fade-in" style="animation-delay: 0.3s;">
+                <div class="service-icon">🏛️</div>
+                <h3>Plataformas Governamentais</h3>
+                <p>Navegue em portais do governo, solicite documentos digitais e acesse serviços públicos online.</p>
+            </div>
+            <div class="service-card fade-in" style="animation-delay: 0.4s;">
+                <div class="service-icon">💬</div>
+                <h3>Comunicação Digital</h3>
+                <p>Use redes sociais, envie mensagens e mantenha contato com amigos e família à distância.</p>
+            </div>
+            <div class="service-card fade-in" style="animation-delay: 0.5s;">
+                <div class="service-icon">🌐</div>
+                <h3>Navegação na Internet</h3>
+                <p>Aprenda a pesquisar, encontrar informações úteis e navegar com segurança na web.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EQUIPE -->
+
+        <section id="equipe">
+                    <h2 class="section-title">Nossa Equipe</h2>
+            <div class="team-grid">
+        <div class="team-member fade-in">
+            <div class="member-avatar">👨‍🏫</div>
+            <div class="member-info">
+                <h3>Rafael Santos</h3>
+                <div class="member-role">CEO</div>
+                <p>Visão estratégica e liderança na inclusão digital. Coordena a missão de trazer autonomia tecnológica para idosos.</p>
+            </div>
+        </div>
+
+        <div class="team-member fade-in">
+            <div class="member-avatar">👩‍💼</div>
+            <div class="member-info">
+                <h3>Alanis Ortolani</h3>
+                <div class="member-role">Vice-Presidente</div>
+                <p>Responsável pela pedagogia acolhedora e metodologias de ensino paciente, garantindo que cada aluno aprenda no seu ritmo.</p>
+            </div>
+        </div>
+        </section>
+
+        <section id="equipe">
+        <div class="team-grid">
+            <div class="team-member fade-in" style="animation-delay: 3s;">
+                <div class="member-avatar">👨‍💻</div>
+                <div class="member-info">
+                    <h3>Guilherme Naidhig</h3>
+                    <div class="member-role">Suporte Técnico</div>
+                    <p>Resolve dúvidas técnicas e oferece assistência personalizada, garantindo que ninguém fica para trás na jornada digital.</p>
+                </div>
+            </div>
+            <div class="team-member fade-in" style="animation-delay: 3s;">
+                <div class="member-avatar">👨‍💻</div>
+                <div class="member-info">
+                    <h3>Arthur Alves</h3>
+                    <div class="member-role">Dev</div>
+                    <p>Desenvolve soluções tecnológicas acessíveis e intuitivas que facilitam o aprendizado digital para idosos.</p>
+                </div>
+            </div>
+            <div class="team-member fade-in" style="animation-delay: 3s;">
+                <div class="member-avatar">👨‍💻</div>
+                <div class="member-info">
+                    <h3>Gabriel Queiroz</h3>
+                    <div class="member-role">Dev</div>
+                    <p>Cria conteúdos educativos e plataformas que tornam a tecnologia compreensível e descomplicada.</p>
+                </div>
+            </div>
+            <div class="team-member fade-in" style="animation-delay: 3s;">
+                <div class="member-avatar">👨‍💻</div>
+                <div class="member-info">
+                    <h3>Guilherme Menezes</h3>
+                    <div class="member-role">Dev</div>
+                    <p>Implementa inovações tecnológicas com foco em acessibilidade, tornando a internet segura e amigável.</p>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- DIFERENCIAIS -->
+    <section id="diferenciais" style="background-color: var(--neutral-light); margin-top: 3rem;">
+        <h2 class="section-title">Por Que Escolher a VôNavega?</h2>
+        <div class="diferenciais-list">
+            <div class="diferencial-item fade-in">
+                <div class="diferencial-icon">✓</div>
+                <div>
+                    <h4>Abordagem Acolhedora</h4>
+                    <p>Sem pressa, sem julgamento. Seu ritmo, sua velocidade.</p>
+                </div>
+            </div>
+            <div class="diferencial-item fade-in" style="animation-delay: 0.1s;">
+                <div class="diferencial-icon">✓</div>
+                <div>
+                    <h4>Professores Qualificados</h4>
+                    <p>Especializados em educação para adultos com muita paciência.</p>
+                </div>
+            </div>
+            <div class="diferencial-item fade-in" style="animation-delay: 0.2s;">
+                <div class="diferencial-icon">✓</div>
+                <div>
+                    <h4>Conteúdo Acessível</h4>
+                    <p>Materiais simples, claros e adaptados para sua realidade.</p>
+                </div>
+            </div>
+            <div class="diferencial-item fade-in" style="animation-delay: 0.3s;">
+                <div class="diferencial-icon">✓</div>
+                <div>
+                    <h4>Suporte Contínuo</h4>
+                    <p>Tiramos dúvidas e acompanhamos seu aprendizado.</p>
+                </div>
+            </div>
+            <div class="diferencial-item fade-in" style="animation-delay: 0.4s;">
+                <div class="diferencial-icon">✓</div>
+                <div>
+                    <h4>Autonomia Digital</h4>
+                    <p>Seu objetivo é ser independente, sem medo, na internet.</p>
+                </div>
+            </div>
+            <div class="diferencial-item fade-in" style="animation-delay: 0.5s;">
+                <div class="diferencial-icon">✓</div>
+                <div>
+                    <h4>Comunidade Acolhedora</h4>
+                    <p>Faça amigos e aprenda junto com quem tem os mesmos objetivos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="contact-section">
+        <h2 class="section-title">Fale Conosco</h2>
+        <div class="contact-content">
+            <div class="contact-info fade-in">
+                <h3>Entre em Contato</h3>
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <a href="mailto:contato@vonavega.com.br">contato@vonavega.com.br</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-details">
+                        <h4>Telefone</h4>
+                        <a href="tel:+5511987654321">(11) 98765-4321</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-details">
+                        <h4>Endereço</h4>
+                        <p>Rua da Inclusão Digital, 123<br>São Paulo, SP - 01234-567</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🕐</div>
+                    <div class="contact-details">
+                        <h4>Horário</h4>
+                        <p>Seg-Sex: 09h às 18h<br>Sáb: 09h às 13h</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-container fade-in" style="animation-delay: 0.2s;">
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem;">Envie-nos uma Mensagem</h3>
+                <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Seu Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Seu Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Enviar Mensagem</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 VôNavega - Inclusão Digital para Idosos. Todos os direitos reservados.</p>
+        <p>Transformando vidas através da tecnologia acessível.</p>
+    </footer>
+
+</body>
+</html>
