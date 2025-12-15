@@ -107,6 +107,64 @@
         }
 
         /* HERO SECTION */
+
+        /* Estilo do botão */
+.btn-swot {
+    background-color: #000080; /* Azul escuro do topo dos seus cards */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn-swot:hover {
+    background-color: #0000cd; /* Um azul um pouco mais claro ao passar o mouse */
+}
+
+/* O container da SWOT começa escondido */
+.swot-container {
+    display: none; /* O SEGREDO: Começa invisível */
+    margin-top: 15px;
+    background-color: #f4f4f9;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+/* Quando adicionamos a classe 'ativo' pelo JS, ele aparece */
+.swot-container.ativo {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+/* Estilo da lista */
+.swot-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.swot-list li {
+    margin-bottom: 5px;
+    padding-left: 5px;
+    border-left: 3px solid #ccc;
+}
+
+/* Cores para cada item da SWOT (opcional) */
+.swot-s { border-left-color: #2ecc71 !important; } /* Verde para Forças */
+.swot-w { border-left-color: #e74c3c !important; } /* Vermelho para Fraquezas */
+.swot-o { border-left-color: #3498db !important; } /* Azul para Oportunidades */
+.swot-t { border-left-color: #f1c40f !important; } /* Amarelo para Ameaças */
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
         .hero {
             background: linear-gradient(135deg, var(--primary) 0%, #1e5a58 100%);
             color: white;

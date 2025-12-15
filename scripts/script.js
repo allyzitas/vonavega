@@ -59,3 +59,25 @@
                 }
             });
         });
+
+        document.addEventListener('DOMContentLoaded', function() {
+    // Seleciona todos os botões de SWOT
+    const botoes = document.querySelectorAll('.btn-swot');
+
+    botoes.forEach(botao => {
+        botao.addEventListener('click', function() {
+            // Acha o container SWOT que está logo depois do botão clicado
+            const swotContent = this.nextElementSibling;
+            
+            // Alterna a classe 'ativo' para mostrar ou esconder
+            swotContent.classList.toggle('ativo');
+
+            // Muda o texto do botão
+            if (swotContent.classList.contains('ativo')) {
+                this.textContent = "Ocultar SWOT";
+            } else {
+                this.textContent = "Ver Análise SWOT";
+            }
+        });
+    });
+});
