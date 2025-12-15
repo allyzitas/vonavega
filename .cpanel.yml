@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home1/simplifica/public_html/grupos/vonavega/
+    - /bin/cp -r * $DEPLOYPATH
