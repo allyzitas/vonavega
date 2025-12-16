@@ -13,6 +13,36 @@
             });
         });
 
+            document.addEventListener('DOMContentLoaded', function() {
+        console.log("Script SWOT carregado!"); // Isso vai aparecer no console se funcionar
+
+        // 1. Seleciona todos os botões azuis
+        const botoes = document.querySelectorAll('.btn-swot');
+
+        // 2. Adiciona o clique em cada um
+        botoes.forEach(function(botao) {
+            botao.addEventListener('click', function() {
+                
+                // 3. Encontra a caixinha da SWOT que está logo abaixo do botão clicado
+                const swotContent = this.nextElementSibling;
+                
+                // 4. Se a caixa não existir (erro de HTML), para aqui
+                if (!swotContent) return;
+
+                // 5. Adiciona ou remove a classe "ativo" (que tem display: block no CSS)
+                swotContent.classList.toggle('ativo');
+
+                // 6. Muda o texto do botão
+                if (swotContent.classList.contains('ativo')) {
+                    this.textContent = "Ocultar SWOT";
+                } else {
+                    this.textContent = "Ver Análise SWOT";
+                }
+            });
+        });
+    });
+
+
         // Animações ao scroll
         const observerOptions = {
             threshold: 0.1,
@@ -59,25 +89,3 @@
                 }
             });
         });
-
-        document.addEventListener('DOMContentLoaded', function() {
-    // Seleciona todos os botões de SWOT
-    const botoes = document.querySelectorAll('.btn-swot');
-
-    botoes.forEach(botao => {
-        botao.addEventListener('click', function() {
-            // Acha o container SWOT que está logo depois do botão clicado
-            const swotContent = this.nextElementSibling;
-            
-            // Alterna a classe 'ativo' para mostrar ou esconder
-            swotContent.classList.toggle('ativo');
-
-            // Muda o texto do botão
-            if (swotContent.classList.contains('ativo')) {
-                this.textContent = "Ocultar SWOT";
-            } else {
-                this.textContent = "Ver Análise SWOT";
-            }
-        });
-    });
-});
