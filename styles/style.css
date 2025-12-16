@@ -410,6 +410,14 @@
         }
 
         /* Estilo para membros em destaque (full-width) — reduz o banner sobrando */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            align-items: start; 
+        }       
+
+
         .team-member.full {
             max-width: 1000px;
             margin-left: auto;
@@ -655,7 +663,6 @@
             .mvv-container,
             .services-grid {
                 grid-template-columns: 1fr;
-                align-items: start;
             }
         }
 
